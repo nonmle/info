@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nonmle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta http-equiv="refresh" content="" />
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="./index.html" draggable="false">nonmle</a></li>
+            <li><a href="./index.html" draggable="false" id="menuBtn">Back<img class="menuBtn" src="./arrow_back_FILL0_wght400_GRAD0_opsz40.svg" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="gallery-container">
+      <!-- Row 1 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?', 'Image 1')">
+        <img src="https://source.unsplash.com/1600x900/?" alt="Image 1">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?street', 'Image 2')">
+        <img src="https://source.unsplash.com/1600x900/?street" alt="Image 2">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Art', 'Image 3')">
+        <img src="https://source.unsplash.com/1600x900/?Art" alt="Image 3">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Posters', 'Image 4')">
+        <img src="https://source.unsplash.com/1600x900/?Posters" alt="Image 4">
+      </div>
+  
+      <!-- Row 2 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?streetart', 'Image 5')">
+        <img src="https://source.unsplash.com/1600x900/?streetart" alt="Image 5">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?people', 'Image 6')">
+        <img src="https://source.unsplash.com/1600x900/?people" alt="Image 6">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?landskape', 'Image 7')">
+        <img src="https://source.unsplash.com/1600x900/?landskape" alt="Image 7">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Berlin', 'Image 8')">
+        <img src="https://source.unsplash.com/1600x900/?Berlin " alt="Image 8">
+      </div>
+
+      <!-- Row 3 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Weltraumbilder', 'Image 9')">
+        <img src="https://source.unsplash.com/1600x900/?Weltraumbilder" alt="Image 5">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Universum', 'Image 10')">
+        <img src="https://source.unsplash.com/1600x900/?Universum" alt="Image 6">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Night', 'Image 11')">
+        <img src="https://source.unsplash.com/1600x900/?Night" alt="Image 7">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Wald', 'Image 12')">
+        <img src="https://source.unsplash.com/1600x900/?Wald" alt="Image 8">
+      </div>
+
+      <!-- Row 4 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Ilustration', 'Image 13')">
+        <img src="https://source.unsplash.com/1600x900/?Ilustration" alt="Image 5">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Wolken', 'Image 14')">
+        <img src="https://source.unsplash.com/1600x900/?Wolken" alt="Image 6">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Himmel', 'Image 15')">
+        <img src="https://source.unsplash.com/1600x900/?Himmel" alt="Image 7">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Texturhintergründe', 'Image 16')">
+        <img src="https://source.unsplash.com/1600x900/?Texturhintergründe" alt="Image 8">
+      </div>
+
+      <!-- Row 5 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?random', 'Image 17')">
+        <img src="https://source.unsplash.com/1600x900/?random" alt="Image 9">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Iraq', 'Image 18')">
+        <img src="https://source.unsplash.com/1600x900/?Iraq" alt="Image 10">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?World', 'Image 19')">
+        <img src="https://source.unsplash.com/1600x900/?World" alt="Image 11">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?PC', 'Image 20')">
+        <img src="https://source.unsplash.com/1600x900/?PC" alt="Image 12">
+      </div>
+
+      <!-- Row 6 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Nasa', 'Image 21')">
+        <img src="https://source.unsplash.com/1600x900/?Nasa" alt="Image 13">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Moon', 'Image 22')">
+        <img src="https://source.unsplash.com/1600x900/?Moon" alt="Image 14">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Menschen', 'Image 23')">
+        <img src="https://source.unsplash.com/1600x900/?Menschen" alt="Image 15">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Natur', 'Image 24')">
+        <img src="https://source.unsplash.com/1600x900/?Natur" alt="Image 16">
+      </div>
+  
+      <!-- Row 7 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Sport', 'Image 25')">
+        <img src="https://source.unsplash.com/1600x900/?Sport" alt="Image 17">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Architektur', 'Image 26')">
+        <img src="https://source.unsplash.com/1600x900/?Architektur" alt="Image 18">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?newyork', 'Image 27')">
+        <img src="https://source.unsplash.com/1600x900/?newyork" alt="Image 19">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Straßenfotografie', 'Image 28')">
+        <img src="https://source.unsplash.com/1600x900/?Straßenfotografie " alt="Image 20">
+      </div>
+
+      <!-- Row 8 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Straßenschild', 'Image 29')">
+        <img src="https://source.unsplash.com/1600x900/?Straßenschild" alt="Image 21">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?DB', 'Image 30')">
+        <img src="https://source.unsplash.com/1600x900/?DB" alt="Image 22">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?BVG', 'Image 31')">
+        <img src="https://source.unsplash.com/1600x900/?BVG" alt="Image 23">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Airplane', 'Image 32')">
+        <img src="https://source.unsplash.com/1600x900/?Airplane " alt="Image 24">
+      </div>
+
+      <!-- Row 9 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Saturn', 'Image 33')">
+        <img src="https://source.unsplash.com/1600x900/?Saturn" alt="Image 25">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Rain', 'Image 34')">
+        <img src="https://source.unsplash.com/1600x900/?Rain" alt="Image 26">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?snow', 'Image 35')">
+        <img src="https://source.unsplash.com/1600x900/?snow" alt="Image 27">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Houses', 'Image 36')">
+        <img src="https://source.unsplash.com/1600x900/?Houses " alt="Image 28">
+      </div>
+
+      <!-- Row 10 -->
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Wshington', 'Image 37')">
+        <img src="https://source.unsplash.com/1600x900/?Wshington" alt="Image 29">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Radikal', 'Image 38')">
+        <img src="https://source.unsplash.com/1600x900/?Radikal" alt="Image 30">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?London', 'Image 39')">
+        <img src="https://source.unsplash.com/1600x900/?London" alt="Image 31">
+      </div>
+      <div class="image-box" onclick="showImage('https://source.unsplash.com/1600x900/?Mossul', 'Image 40')">
+        <img src="https://source.unsplash.com/1600x900/?Mossul " alt="Image 32">
+      </div>
+    </div>
+    
+    <div class="modal" id="myModal" onclick="closeModal()">
+      <div class="modal-content">
+          <img id="modalImage" src="" alt="Modal Image">
+      </div>
+    </div>
+
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scrollbar-width: 0;
+      overflow: scroll;
+      -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar,
+    .gallery-container::-webkit-scrollbar,
+    img::-webkit-scrollbar,
+    .image-box img::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 865px;
+      margin: 0 auto;
+      margin: 0 40px 40px 40px;
+    }
+
+    .gallery-container {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 40px 40px 40px;
+      background: #d7d7d7;
+    }
+
+    .image-box {
+      width: calc(25% - 20px);
+      height: 420px;
+      box-sizing: border-box;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    body.modal-open {
+            overflow: hidden;
+    }
+    .modal-content {
+      max-width: 80%;
+      max-height: 80%;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .modal img {
+      max-width: 100%; 
+      max-height: 100%;
+      object-fit: contain;
+      cursor: pointer;
+      transition: transform 0.5s ease-in-out; 
+      width: calc(100% - 10px);
+      height: auto;
+    }
+    .modal.open {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      scrollbar-width: 0;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .menuBtn {
+      transform: rotate(200grad);
+    }
+
+    a#menuBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 17.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .navbar li {
+      display: contents;
+    }
+
+    @media only screen and (max-width: 768px) {
+      a#menuBtn {
+        font-size: 12.5px;
+      }
+      .image-box {
+        width: calc(100% - 10px);
+      }
+      .modal img {
+        width: calc(100% - 10px);
+        height: auto;
+      }
+      
+      .navbar ul {
+        margin: 20px 40px;
+      }
+    }
+
+    </style>
+
+    <script>
+    // Prevent right-click and left-click on specified elements
+    document.addEventListener('contextmenu', e => e.preventDefault());
+        
+    const disableClickElements = document.querySelectorAll('.disable-left-click');
+    disableClickElements.forEach(element => element.addEventListener('click', e => e.preventDefault()));
+        
+    // Add event listener for home link click
+      document.getElementById('homeLink').addEventListener('click', function () {
+      window.location.href = "your_home_page_url";
+    });
+
+    // Image Modal
+    function showImage(imageSrc, altText) {
+      const modal = document.getElementById('myModal');
+      const modalImage = document.getElementById('modalImage');
+
+      modalImage.src = imageSrc;
+      modalImage.alt = altText;
+
+    document.body.classList.add('modal-open');
+            
+      modal.style.display = 'flex';
+
+      setTimeout(() => {
+      modal.classList.add('open');
+      }, 50);
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('myModal');
+
+      modal.classList.remove('open');
+            
+      document.body.classList.remove('modal-open');
+            
+      setTimeout(() => {
+      modal.style.display = 'none';
+      }, 500); 
+    }
+
+    window.onclick = function (event) {
+      const modal = document.getElementById('myModal');
+      if (event.target === modal) {
+      closeModal();
+      }
+    };
+    </script>      
+</body>
+</html>
