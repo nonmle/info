@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <meta http-equiv="refresh" content="" />
 </head>
-<body>
+<body class="content">
     <div class="navbar">
         <ul>
             <li><a href="./index.html" draggable="false">nonmle</a></li>
@@ -177,6 +177,10 @@
       overflow: scroll;
       -ms-overflow-style: none;
     }
+    .content {
+      height: 200%; /* Adjust this value based on your content length */
+      background-color: #f0f0f0; /* Set a background color for the content */
+    }   
 
     html::-webkit-scrollbar,
     .gallery-container::-webkit-scrollbar,
@@ -350,6 +354,45 @@
       closeModal();
       }
     };
+
+    document.addEventListener('DOMContentLoaded', function () {
+    let startTime;
+    const duration = 1000;
+    const scrollMultiplier = 2;
+
+    function easeInOutQuad(t, b, c, d) {
+      t /= d;
+      return -c * t * (t - 2) + b;
+    }
+
+    function scrollTo(target, duration) {
+      const start = window.scrollY;
+      const change = target - start;
+      startTime = performance.now();
+
+      function animateScroll(time) {
+        const elapsed = time - startTime;
+        const newPos = easeInOutQuad(elapsed, start, change, duration);
+
+        window.scrollTo(0, newPos);
+
+        if (elapsed < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      }
+
+    requestAnimationFrame(animateScroll);
+    }
+
+  document.addEventListener('wheel', function (event) {
+    event.preventDefault();
+
+    const scrollDirection = event.deltaY > 0 ? 1 : -1;
+    const targetPosition = window.scrollY + scrollDirection * scrollMultiplier * 100;
+    scrollTo(targetPosition, duration);
+    });
+  });
+
     </script>      
 </body>
 </html>
