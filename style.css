@@ -181,13 +181,14 @@ a, div, .main a, .navbar a, .nonmle {
 }
 
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 40px;
-  background-color: var(--main-background);
-  height: 100vh;
+    /* height: 50vh; */
+    padding-left: 10px;
+    margin: 0 30px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    scrollbar-width: 0;
+    flex-direction: row;
 }
 
 .img-a {
