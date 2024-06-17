@@ -82,13 +82,13 @@
         translatableText.textContent = (translatableText.textContent === originalText) ? "Die Website ist nicht mehr verfügbar. Danke für Ihren Besuch!" : originalText;
       }
       // Toggle 
-      //document.addEventListener("DOMContentLoaded", function () {
-      //const body = document.body;
-      //const modeToggle = document.getElementById("modeToggle");
+      document.addEventListener("DOMContentLoaded", function () {
+      const body = document.body;
+      const modeToggle = document.getElementById("modeToggle");
 
-      //modeToggle.addEventListener("click", function () {
-      //  body.classList.toggle("dark-mode");
-      //  body.classList.toggle("light-mode");
+      modeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+        body.classList.toggle("light-mode");
       });
       });
     </script>      
